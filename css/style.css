@@ -4,6 +4,21 @@ body {
     flex-direction: row;
 }
 
+@media all and (max-width: 900px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .partie__un {
+        flex: 1;
+    }
+    .partie__deux {
+        flex: 1;
+    }
+}
+
 
 /**************PARTIE UN***************/
 
@@ -22,7 +37,7 @@ body {
     color: rgb(255, 255, 255);
     line-height: 32px;
     padding: 30px 0 0 40px;
-
+    height: 20vh;
 }
 
 .header > img {
@@ -57,10 +72,16 @@ body {
     text-align: right;
     font-size: 13px;
     background-color: rgba(78, 70, 70, 0.6);
-    top: 300px;
+    top: 22%;
     padding: 20px;
-    margin: 20px;
+    width: 100%;
 
+}
+
+@media all and (max-width: 900px) {
+    .main__titre  {
+        display: none;
+    }
 }
 
 .main__titre-italic {
@@ -78,20 +99,25 @@ body {
 
 /*******PARTIE UN SECTION FOOTER NAV**********/
 
+ul {
+    margin: 0;
+}
+.navigation {
+    position:absolute;
+    bottom: 0;
+    width: 50vw;
+}
+
 .navigation__nav {
     color: white;
-    position: relative;
-    margin: 50px;
-    
+    margin: 0px;
 }
 
 .navigation__detail {
     display: flex;
     justify-content: end;
-    position: relative;
-    top: 750px;
     padding: 20px;
-    background-color: rgba(78, 70, 70, 0.6);
+    background-color: rgba(78, 70, 70, 0.6);   
 }
 
 .navigation__detail > li {
@@ -99,7 +125,6 @@ body {
     font-size: 15px;
     list-style-type: none;
     transition: transform 300ms ease-in-out;
-    
 }
 
 .navigation__detail > li:hover {
@@ -108,13 +133,33 @@ body {
 }
 
 @media all and (max-width: 900px) {
+    .navigation {
+        position: absolute;
+        bottom: 50%;
+        width: 100vw;
+    }
     .navigation__detail {
         display: flex;
-        flex-wrap: wrap;
         justify-content: end;
-        position: relative;
-        top: 700px;
+        padding: 20px;
+        background-color: rgba(78, 70, 70, 0.6);
     }
+    
+}
+
+@media all and (max-width: 900px) {
+    .navigation {
+        position: absolute;
+        bottom: 50%;
+        width: 100vw;
+    }
+    .navigation__detail {
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+        background-color: rgba(78, 70, 70, 0.6);
+    }
+    
 }
 
 
@@ -131,8 +176,8 @@ body {
 }
 
 .partie__deux--titre {
-    font-size : 2em;
-    margin-bottom: 50px;
+    font-size : 3em;
+    margin: 100px 0px;
 }
 
 
@@ -168,14 +213,18 @@ body {
     padding: 60px;
     height: 355px;
     border: 1px solid #eaeaea;
+    overflow: scroll;
 }
 
 .article__reading {
     transition: transform 300ms ease-in-out;
+    width: 30%;
 }
 
 .article__reading:hover {
     transform: scale(1.1);
+    color: black;
+    text-decoration: none;
 }
 
 .article__titre {
@@ -204,6 +253,7 @@ body {
         
 .article__date {
         color: #BDC6CD;
+        font-weight: 600;
         font-size: .8em;
         top: 50%;
         height: 100%;
