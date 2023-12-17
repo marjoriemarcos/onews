@@ -131,6 +131,9 @@ ul {
     transform: scale(1.1);
     
 }
+li > i {
+    margin-right: 3px;
+}
 
 @media all and (max-width: 900px) {
     .navigation {
@@ -172,24 +175,16 @@ ul {
 }
 
 .partie-deux--container {
-    margin: 20px 20px 50px;
+    margin: 20px 20px;
 }
 
 .partie__deux--titre {
     font-size : 3em;
-    margin: 100px 0px;
+    margin: 50px 0px;
 }
-
-
-.partie__deux article {
-    padding: 10px;
-}
-
-
 
 .partie__deux img {
     width: 30px;
-
 }
 
 /***************PARTIE DEUX ARTICLE**************/
@@ -210,20 +205,19 @@ ul {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 60px;
     height: 355px;
     border: 1px solid #eaeaea;
     overflow: scroll;
+    padding: 30px;
 }
 
 .article__reading {
     transition: transform 300ms ease-in-out;
-    width: 30%;
+    width: 25%;
 }
 
 .article__reading:hover {
     transform: scale(1.1);
-    color: black;
     text-decoration: none;
 }
 
