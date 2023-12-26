@@ -1,7 +1,6 @@
 body { 
     height: 100vh;
     display: flex;
-    flex-direction: row;
 }
 
 @media all and (max-width: 900px) {
@@ -20,7 +19,7 @@ body {
 }
 
 
-/**************PARTIE UN***************/
+/**************PARTIE UN HEADER***************/
 
 
 .partie__un { 
@@ -63,7 +62,7 @@ body {
 }
 
 
-/*******PARTIE UNE SECTION MAIN__TITRE**********/
+/*******PARTIE UN SECTION MAIN__TITRE**********/
 
 
 .main__titre {
@@ -124,12 +123,12 @@ ul {
     margin-left: 30px;
     font-size: 15px;
     list-style-type: none;
-    transition: transform 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .navigation__detail > li:hover {
     transform: scale(1.1);
-    
+    text-shadow: 1px 1px 2px black;
 }
 li > i {
     margin-right: 3px;
@@ -153,7 +152,7 @@ li > i {
 @media all and (max-width: 900px) {
     .navigation {
         position: absolute;
-        bottom: 50%;
+        bottom: 0;
         width: 100vw;
     }
     .navigation__detail {
@@ -161,6 +160,11 @@ li > i {
         justify-content: end;
         padding: 20px;
         background-color: rgba(78, 70, 70, 0.6);
+    }
+
+    .partie__deux {
+        position: relative;
+        margin-bottom: 80px;
     }
     
 }
@@ -171,7 +175,7 @@ li > i {
 .partie__deux { 
     flex: 1;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .partie-deux--container {
@@ -207,18 +211,18 @@ li > i {
     flex-direction: column;
     height: 355px;
     border: 1px solid #eaeaea;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 30px;
 }
 
 .article__reading {
-    transition: transform 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
     width: 25%;
 }
 
 .article__reading:hover {
     transform: scale(1.1);
-    text-decoration: none;
+
 }
 
 .article__titre {
