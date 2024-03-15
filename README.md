@@ -10,5 +10,5 @@ HTML et CSS
 
 ## Pour le visualiser
 
-[Cliquez ici pour voir le projet]([URL_du_lien](https://marjoriemarcos.github.io/onews/))
+[Cliquez ici pour voir le projet](https://marjoriemarcos.github.io/onews/)
 
